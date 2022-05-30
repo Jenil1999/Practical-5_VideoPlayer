@@ -14,4 +14,9 @@ public class VideoManager : MonoBehaviour
         videoPlayer.url = TVUrlTextField.text;
         //videoPlayer.Play();
     }
+
+    /*public void Stepforward()
+    {
+        videoPlayer.StepForward();
+    }*/
 }

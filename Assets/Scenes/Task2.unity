@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 31e7c58c59a80dc49aa6d2ace41238ba, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7c78ed496ec005d4e84d1db1927f23a9, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -794,6 +794,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -866,6 +867,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37635640766116b4dab71ff70fb27057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1038290116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,11 +1200,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965047274}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 7f836d2fcf64f4444bd620f70798670e, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 467a9f81f6af1f7499d783a906849a6d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 961ea6f56f3706f4c9d16ddca4da09a4, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 3f549b77079ca2c4ca76120ffa99d698, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex

@@ -10,9 +10,13 @@ public class TimeSlider : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public VideoPlayer videoPlayer;
     public AudioSource Audio;
     public Slider VolumeTracker;
+    public Sprite SoundOnImage;
+    public Sprite MuteImage;
+    public Button button;
 
     Slider TimeStamp;
     bool slider = false;
+    bool SoundIsOn = true;
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -29,6 +33,7 @@ public class TimeSlider : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     void Start()
     {
         TimeStamp = GetComponent<Slider>();
+        SoundOnImage = button.image.sprite;
     }
 
     
@@ -43,6 +48,22 @@ public class TimeSlider : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void Volume()
     {
         Audio.volume = VolumeTracker.value;
+    }
+
+    public void OnButtonClicked()
+    {
+        if(SoundIsOn)
+        {
+            SoundIsOn = false;
+            button.image.sprite = MuteImage;
+            Audio.mute = true;
+        }
+        else
+        {
+            SoundIsOn = true;
+            button.image.sprite = SoundOnImage;
+            Audio.mute = false;
+        }
     }
 
 }
